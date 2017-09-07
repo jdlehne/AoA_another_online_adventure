@@ -1,0 +1,332 @@
+body {
+  background-image:url("../images/bgtavern2.png");
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+@font-face {
+  font-family: 'aoaFont';
+  font-style: normal;
+  font-weight: 400;
+  src: local('aoaFont'), url("../images/aoaFont.ttf") format('truetype');
+}
+
+.small, small {
+    font-size: 40%;
+    font-weight: 300;
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+.stone {
+
+    line-height: 60px;
+    font-family: "aoaFont", "Helvetica", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.stone1 {
+    color: rgba(34,15,15,1);
+    font-weight:bold;
+    text-shadow: 2px 2px 5px #e4d1a3;
+    font-size:60px;
+}
+
+.page-header{
+  font-weight:bold;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#textWindow {
+  width: 100%;
+  font-family: 'Aldrich', sans-serif;
+
+}
+
+#gameBorder{
+  padding: 2px;
+  border: 5px solid;
+  width:100%;
+  animation:pulse 1s infinite alternate;
+}
+
+.card {
+  margin-top: 5px;
+  background-image: url("../images/parch3.jpg");
+  background-size: cover;
+  border: 5px solid;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#inspectName, #inspectDesc{
+  font-size: 18px;
+  padding:5px;
+  margin: 5px;
+}
+
+#playerImage, #characterInfo, #enemyInfo, #enemyImage, #weaponInfo {
+  padding: 10px;
+  border: solid 1px black;
+  font-family: Helvetica, sans-serif;
+  border-radius: 5px;
+  background:rgba(51,51,51,0.5);
+  color:white;
+  border-top: 1px solid #454545;
+  border-bottom: 1px solid #151515;
+  margin:5px;
+}
+
+#textWindow {
+  width: 100%;
+  height: 350px;
+  background-color: black;
+  color: green;
+  overflow-y: hidden;
+  word-wrap: break-word;
+}
+
+
+button {
+  background:rgba(51,51,51,0.9);
+  color:#e4d1a3;
+}
+
+#playerNameDisplay{
+      font-size: 20px;
+    margin-left: 25px;
+}
+
+.progress{
+  margin:5px;
+}
+
+#commandInput {
+  width: 100%;
+  margin-bottom: 10px
+}
+
+.commandText{
+  margin-bottom:10px;
+  border-bottom: 2px solid #222;
+  padding-bottom:5px;
+
+}
+
+#hudButtons{
+  margin:0 auto;
+  text-align:center;
+}
+
+#submitBtn{
+  color:red;
+}
+
+#commandBtn, #logInBtn, {
+  font-size: 12px;
+
+}
+
+/*--Modal CSS---*/
+.modal-content {
+font-family: "aoaFont";
+color:white;
+background-color: rgba(51,51,51,0.9);
+text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+
+}
+
+#commandBox{
+  font-size:18px;
+  }
+
+
+/*Sidenav Commands*/
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  left: -335px;
+  width: 335px;
+  height: 100%;
+  background-image: url("../images/parch4.png");
+  background-size: cover;
+  z-index: 100;
+  padding:10px;
+  color:white;
+  overflow-y: auto;
+  text-shadow: 2px 2px 5px #b83050;
+}
+
+.slideout-menu h3 {
+  position: relative;
+  padding: 12px 10px;
+  font-size: 1.2em;
+  font-weight: 400;
+  border-bottom: 4px solid #222;
+}
+
+.slideout-menu .slideout-menu-toggle {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  display: inline-block;
+  padding: 6px 9px 5px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  vertical-align: top;
+}
+
+.slideout-menu ul {
+  list-style: none;
+  font-weight: 300;
+  border-top: 1px solid #151515;
+  border-bottom: 1px solid #454545;
+}
+
+footer {
+  background-color: rgba(51,51,51,0.9);
+  width:100%;
+}
+
+
+/*---right character panel---*/
+
+.slideout-menu-right {
+  position: fixed;
+  top: 0;
+  right: -335px;
+  width: 335px;
+  height: 100%;
+  background-image: url("../images/parch4.png");
+  background-size: cover;
+  z-index: 100;
+  padding:10px;
+  color:white;
+  overflow-y: auto;
+  font-family:"aoaFont";
+}
+#commandInput{
+  background: black;
+  color:white;
+   border: none;
+   margin-bottom: 0;
+}
+
+/* CSS for chat area */
+.infoAlert{
+  color: #4ed2ed;
+}
+.listItem{
+  color: #f49b42;
+}
+.listItemIndicator{
+  color: #d15225;
+}
+.playerMessage{
+  color: #ffffff;
+}
+.playerName {
+  color: red;
+}
+.doAction{
+  color: #d4d684;
+}
+.shout{
+  color: #f48342;
+}
+
+/*fullscreen*/
+
+#mainWindow.fullscreen{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+ }
+
+ #textWindow.fullscreen{
+  height:85%;
+ }
+
+/* Scrollbar style*/
+
+.styleScroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.styleScroll::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000;
+}
+
+.styleScroll::-webkit-scrollbar-thumb {
+  background-color: green;
+  border: 2px solid #555555;
+  border-radius: 10px;
+}
+
+/*------Animation----*/
+
+.card {
+   -webkit-animation: fadein 6s; 
+   animation: 2s ease-out 0s 1 slideInFromBottom;     
+}
+
+#mainWindow, .gameBorder {
+   -webkit-animation: fadein 4s; 
+
+}
+
+.stone1{
+  -webkit-animation: fadein 2s; 
+   animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes pulse {
+  from { box-shadow:0px 0px 10px 3px #e4d1a3; }
+  to { box-shadow:0px 0px 20px 5px #e4d1a3; }
+}
+
+/*----animation end----*/
